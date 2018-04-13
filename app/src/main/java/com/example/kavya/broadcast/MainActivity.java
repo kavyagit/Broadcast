@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 RecyclerView recyclerView;
-TextView text;
+private TextView text;
 RecyclerView.LayoutManager layoutManager;
 private ArrayList<incomingNumber>arrayList=new ArrayList <>();
 private RecyclerAdapter adapter;
@@ -23,7 +23,7 @@ private RecyclerAdapter adapter;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         recyclerView =(RecyclerView)findViewById(R.id.recyclerView);
-       text =    (TextView)findViewById(R.id.recyclerView);
+        text     =    (TextView)findViewById(R.id.recyclerView);
         layoutManager =new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setHasFixedSize(true);
